@@ -1,0 +1,30 @@
+using System;
+using Microsoft.ML.Probabilistic.Distributions;
+using Microsoft.ML.Probabilistic.Math;
+using Microsoft.ML.Probabilistic.Models;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int[] data = new int[100];
+        for (int i = 0; i < data.Length; i++)
+        {
+            data[i] = Rand.Int(0, 2);
+        }
+
+        Variable<double> rozkład = Variable.Beta(1, 1);
+
+        for (int i = 0; i < data.Length; i++)
+        {
+            Variable<bool> x = Variable.Bernoulli(rozkład);
+            x.ObservedValue = 1==data[i] ;
+        }
+
+        InferenceEngine engine = new InferenceEngine();
+        Beta posterior = engine.Infer<Beta>(rozkład);
+
+        Console.WriteLine("Mean: " + posterior.GetMean());
+        Console.WriteLine("Variance: " + posterior.GetVariance());
+    }
+}
