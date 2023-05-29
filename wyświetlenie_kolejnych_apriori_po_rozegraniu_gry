@@ -1,0 +1,68 @@
+using Microsoft.ML.Probabilistic.Distributions;
+using Microsoft.ML.Probabilistic.Models;
+using System.Linq;
+using Range = Microsoft.ML.Probabilistic.Models.Range;
+
+namespace myApp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // The winner and loser in each of 6 samples games
+            var winnerData = new[] { 0, 0, 0, 1, 3, 4 };
+            var loserData = new[] { 1, 3, 4, 2, 1, 2 };
+
+            // Define the statistical model as a probabilistic program
+            
+
+            var inferenceEngine = new InferenceEngine();
+
+            for (int i=0;i< winnerData.Length;i++ )
+            {
+              
+
+                var game = new Range(i+1);
+                var player = new Range(winnerData.Concat(loserData).Max() + 1);
+                Console.WriteLine(player);
+                var playerSkills = Variable.Array<double>(player);
+
+                playerSkills[0] = Variable.GaussianFromMeanAndVariance(6, 9);
+                playerSkills[1] = Variable.GaussianFromMeanAndVariance(7, 6);
+                playerSkills[2] = Variable.GaussianFromMeanAndVariance(0, 1);
+                playerSkills[3] = Variable.GaussianFromMeanAndVariance(6, 9);
+                playerSkills[4] = Variable.GaussianFromMeanAndVariance(3, 4);
+
+                var winners = Variable.Array<int>(game);
+                var losers = Variable.Array<int>(game);
+
+
+                using (Variable.ForEach(game))
+                {
+                    var winnerPerformance = Variable.GaussianFromMeanAndVariance(playerSkills[winners[game]], 1.0);
+                    var loserPerformance = Variable.GaussianFromMeanAndVariance(playerSkills[losers[game]], 1.0);
+
+                    Variable.ConstrainTrue(winnerPerformance > loserPerformance);
+                }
+
+                winners.ObservedValue = new ArraySegment<int>(winnerData, 0, i+1).ToArray(); ;
+                losers.ObservedValue = new ArraySegment<int>(loserData, 0, i+1).ToArray();
+                var inferredSkills = inferenceEngine.Infer<Gaussian[]>(playerSkills);
+                // The inferred skills are uncertain, which is captured in their variance
+                var orderedPlayerSkills = inferredSkills
+                    .Select((s, i) => new { Player = i, Skill = s })
+                    .OrderByDescending(ps => ps.Skill.GetMean());
+
+                Console.WriteLine(new ArraySegment<int>(winnerData, 0, i + 1).ToArray()[0]);
+                Console.WriteLine($"game{i} win pleyer:{winnerData[i]}  los pleyer:{loserData[i]}");
+                foreach (var playerSkill in orderedPlayerSkills)
+                {
+                    Console.WriteLine($"Player {playerSkill.Player} skill: {playerSkill.Skill}");
+                }
+
+                winners.ClearObservedValue();
+                losers.ClearObservedValue();
+            }
+        }
+    }
+}
