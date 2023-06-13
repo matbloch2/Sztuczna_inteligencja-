@@ -1,0 +1,15 @@
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.csproj.AssemblyReference.cache
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.AssemblyInfoInputs.cache
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.AssemblyInfo.cs
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.csproj.CoreCompileInputs.cache
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\bin\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.exe
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\bin\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.deps.json
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\bin\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.runtimeconfig.json
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\bin\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.dll
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\bin\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.pdb
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.dll
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\refint\nowy_ Algorytm wyrzażania_dla_n_procesów.dll
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.pdb
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\nowy_ Algorytm wyrzażania_dla_n_procesów.genruntimeconfig.cache
+C:\Users\matbl\source\repos\nowy_ Algorytm wyrzażania_dla_n_procesów\nowy_ Algorytm wyrzażania_dla_n_procesów\obj\Debug\net6.0\ref\nowy_ Algorytm wyrzażania_dla_n_procesów.dll
