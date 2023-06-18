@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ml6usJS3Gdb6oTAkB+y7oDLphUTub+G727xRlz949soo2D+cR1g9pbfb4fYqpG/zaQve1Zor83bDjUF+Hw1W3A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matbl\\source\\repos\\GAF_wersja_6\\GAF_wersja_6\\GAF_wersja_6.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matbl\\.nuget\\packages\\gaf\\2.3.1\\gaf.2.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}
